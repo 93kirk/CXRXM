@@ -1,0 +1,219 @@
+[ 2017-02-17T15:16:21+08:00 ] ::1 /CRM/index.php/home/customer/add/createby/15015141313/name/%E5%A4%A7%E4%BD%AC
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0570s ]
+NOTIC: [8] Undefined variable: mobile E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 14 行.
+SQL: INSERT INTO `crm_customer` (`create_by`,`create_date`) VALUES ('15015141313','1487315781') [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011110s ]
+
+[ 2017-02-17T15:28:45+08:00 ] ::1 /CRM/index.php/home/customer/add/createby/15015141313/name/%E5%A4%A7%E4%BD%AC
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0089s ]
+NOTIC: [8] Undefined variable: mobile E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 14 行.
+SQL: INSERT INTO `crm_customer` (`name`,`create_by`,`create_date`) VALUES ('大佬','15015141313','1487316525') [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2017-02-17T16:43:11+08:00 ] ::1 /CRM/index.php/home/customer/add/createby/15015141313/name/%E5%B0%8F%E4%BD%AC
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0051s ]
+NOTIC: [8] Undefined variable: mobile E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 13 行.
+NOTIC: [8] Undefined variable: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 16 行.
+ERR: 1062:Duplicate entry '0' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `crm_customer` (`name`,`create_by`,`create_date`,`update_date`,`is_abandon`) VALUES ('小佬','15015141313','1487320991','1487320991','0')
+ERR: 1062:Duplicate entry '0' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `crm_customer` (`name`,`create_by`,`create_date`,`update_date`,`is_abandon`) VALUES ('小佬','15015141313','1487320991','1487320991','0')
+
+[ 2017-02-17T16:44:13+08:00 ] ::1 /CRM/index.php/home/customer/add/createby/15015141313/name/%E5%B0%8F%E4%BD%AC
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined variable: mobile E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 13 行.
+NOTIC: [8] Undefined variable: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 16 行.
+ERR: 1062:Duplicate entry '0' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `crm_customer` (`name`,`create_by`,`create_date`,`update_date`,`is_abandon`) VALUES ('小佬','15015141313','1487321053','1487321053','0')
+ERR: 1062:Duplicate entry '0' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `crm_customer` (`name`,`create_by`,`create_date`,`update_date`,`is_abandon`) VALUES ('小佬','15015141313','1487321053','1487321053','0')
+
+[ 2017-02-17T16:46:03+08:00 ] ::1 /CRM/index.php/home/customer/add/createby/15015141313/name/%E5%B0%8F%E4%BD%AC
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0058s ]
+NOTIC: [8] Undefined variable: mobile E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 13 行.
+NOTIC: [8] Undefined variable: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 16 行.
+SQL: INSERT INTO `crm_customer` (`name`,`create_by`,`create_date`,`update_date`,`is_abandon`) VALUES ('小佬','15015141313','1487321163','1487321163','0') [ RunTime:0.0218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001014s ]
+
+[ 2017-02-17T16:47:07+08:00 ] ::1 /CRM/index.php/home/customer/add/createby/15015141313/name/%E5%B0%8F%E4%BD%AC
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0033s ]
+NOTIC: [8] Undefined variable: mobile E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 13 行.
+NOTIC: [8] Undefined variable: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 16 行.
+SQL: INSERT INTO `crm_customer` (`name`,`create_by`,`create_date`,`update_date`,`is_abandon`) VALUES ('小佬','15015141313','1487321227','1487321227','0') [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2017-02-17T17:17:49+08:00 ] ::1 /CRM/index.php/home/customer/add/createby/15015141313/name/%E5%B0%8F%E4%BD%AC
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0420s ]
+NOTIC: [8] Undefined index: mobile E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 13 行.
+NOTIC: [8] Undefined variable: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2017-02-17T17:18:37+08:00 ] ::1 /CRM/index.php/home/customer/update/remark/%E5%B0%8F%E6%96%B0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined index: mobile E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 27 行.
+NOTIC: [8] Undefined index: profession E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 30 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001100s ]
+
+[ 2017-02-17T17:19:49+08:00 ] ::1 /CRM/index.php/home/customer/update/remark/%E5%B0%8F%E6%96%B0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+
+[ 2017-02-17T17:20:17+08:00 ] ::1 /CRM/index.php/home/customer/update/remark/%E5%B0%8F%E6%96%B0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+
+[ 2017-02-17T17:21:45+08:00 ] ::1 /CRM/index.php/home/customer/update/remark/%E5%B0%8F%E6%96%B0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: mobile E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 27 行.
+NOTIC: [8] Undefined index: profession E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 30 行.
+ERR: Think\Model:update方法不存在！
+
+[ 2017-02-17T17:22:39+08:00 ] ::1 /CRM/index.php/home/customer/update/remark/%E5%B0%8F%E6%96%B0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined index: mobile E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 25 行.
+NOTIC: [8] Undefined index: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 28 行.
+NOTIC: [8] Undefined index: profession E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 31 行.
+ERR: Think\Model:update方法不存在！
+
+[ 2017-02-17T17:23:20+08:00 ] ::1 /CRM/index.php/home/customer/update/remark/%E5%B0%8F%E6%96%B0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: mobile E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 25 行.
+NOTIC: [8] Undefined index: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 28 行.
+NOTIC: [8] Undefined index: profession E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 31 行.
+ERR: Think\Model:update方法不存在！
+
+[ 2017-02-17T17:23:43+08:00 ] ::1 /CRM/index.php/home/customer/update/remark/%E5%B0%8F%E6%96%B0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0042s ]
+NOTIC: [8] Undefined index: mobile E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 25 行.
+NOTIC: [8] Undefined index: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 28 行.
+NOTIC: [8] Undefined index: profession E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 31 行.
+ERR: Think\Model:update方法不存在！
+
+[ 2017-02-17T17:31:04+08:00 ] ::1 /CRM/index.php/home/customer/update/remark/%E5%B0%8F%E6%96%B0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002234s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0071s ]
+NOTIC: [8] Undefined index: mobile E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 25 行.
+NOTIC: [8] Undefined index: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 28 行.
+NOTIC: [8] Undefined index: profession E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 31 行.
+SQL: UPDATE `crm_customer` SET `remark`='小新' WHERE `name` = '谢春' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2017-02-17T17:35:10+08:00 ] ::1 /CRM/index.php/home/customer/update/remark/%E5%B0%8F%E6%96%B0/name/%E5%A7%9A%E5%87%AF/nameup/%E8%80%81%E5%A7%9A
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: mobile E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 28 行.
+NOTIC: [8] Undefined index: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 31 行.
+NOTIC: [8] Undefined index: profession E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 34 行.
+SQL: UPDATE `crm_customer` SET `name`='老姚',`remark`='小新' WHERE `name` = '姚凯' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+

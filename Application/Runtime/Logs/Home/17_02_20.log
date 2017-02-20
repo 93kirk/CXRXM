@@ -1,0 +1,122 @@
+[ 2017-02-20T14:01:58+08:00 ] 10.10.13.30 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `crm_user` [ RunTime:0.0347s ]
+SQL: SELECT `password` FROM `crm_user` WHERE ( `mobile` = 'tes' OR `login_name` = 'tes' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 60 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018690s ]
+
+[ 2017-02-20T14:02:14+08:00 ] 10.10.13.30 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `crm_user` [ RunTime:0.0031s ]
+SQL: SELECT `password` FROM `crm_user` WHERE ( `mobile` = 'test' OR `login_name` = 'test' )  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2017-02-20T15:23:03+08:00 ] 10.10.13.30 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `crm_user` [ RunTime:0.0032s ]
+SQL: SELECT `password` FROM `crm_user` WHERE ( `mobile` = 'test' OR `login_name` = 'test' )  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2017-02-20T15:26:44+08:00 ] 10.10.12.189 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `crm_user` [ RunTime:0.0029s ]
+SQL: SELECT `password` FROM `crm_user` WHERE ( `mobile` = 'te' OR `login_name` = 'te' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 60 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2017-02-20T15:26:46+08:00 ] 10.10.12.189 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `crm_user` [ RunTime:0.0032s ]
+SQL: SELECT `password` FROM `crm_user` WHERE ( `mobile` = 'te' OR `login_name` = 'te' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 60 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2017-02-20T15:26:50+08:00 ] 10.10.12.189 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `crm_user` [ RunTime:0.0030s ]
+SQL: SELECT `password` FROM `crm_user` WHERE ( `mobile` = 'te' OR `login_name` = 'te' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 60 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000683s ]
+
+[ 2017-02-20T15:28:15+08:00 ] 10.10.12.189 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `crm_user` [ RunTime:0.0038s ]
+SQL: SELECT `password` FROM `crm_user` WHERE ( `mobile` = 'te' OR `login_name` = 'te' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 60 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2017-02-20T15:28:26+08:00 ] 10.10.12.189 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `crm_user` [ RunTime:0.0033s ]
+SQL: SELECT `password` FROM `crm_user` WHERE ( `mobile` = 'test' OR `login_name` = 'test' )  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2017-02-20T15:29:27+08:00 ] 10.10.12.189 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `crm_user` [ RunTime:0.0227s ]
+SQL: SELECT `password` FROM `crm_user` WHERE ( `mobile` = 'test' OR `login_name` = 'test' )  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000684s ]
+

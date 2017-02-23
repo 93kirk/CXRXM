@@ -21,59 +21,107 @@ class LogController extends Controller {
 				$user = M("user"); // 实例化user对象
                 $data['mobile'] = $mobile;
                 $data['password'] = $pwd;
-				$user->add($data);
+				$data['create_date'] = time();
+				$result=$user->add($data);
 			}
 			else{
-				$msg='两次密码输入不同或密码不足6位';
+				$msg = '两次密码输入不同或密码不足6位';
 			    $data['mobile'] = $mobile;
                 $data['pwd1'] = $pwdinput1;
 			    $data['pwd2'] = $pwdinput2;
 			}
 		}
 		else{
-			$msg='手机号码格式有误或已注册';
+			$msg = '手机号码格式有误或已注册';
 			$data['mobile'] = $mobile;
             $data['pwd1'] = $pwdinput1;
 			$data['pwd2'] = $pwdinput2;
 		}
+		if(false !== $result){
+			$status = 'T';
+		}
+		else{
+			$status = 'F';
+		}
 		$response = array(
-                'type'  => 'json', 
                 'message' => $msg,
-				//'testinput'=>$input,
 				'data'=>$data,
+				'status'  => $status, 
 				);
 		echo json_encode($response);
 	}
     public function login(){//登录
-		$input=$GLOBALS['HTTP_RAW_POST_DATA'];
-		$inputdone=json_decode($input,true);
-		$uname=$inputdone['account'];
-		$pwdinput=$inputdone['pwd'];
-		if($uname==null||$pwdinput==null){//判断账号密码是否为空
+		$input = $GLOBALS['HTTP_RAW_POST_DATA'];
+		$inputdone = json_decode($input,true);
+		$uname = $inputdone['uname'];
+		$pwdinput = $inputdone['pwd'];
+		if($uname == null||$pwdinput==null){//判断账号密码是否为空
 			$msg = '账号或密码为空';
 		}
         else{
 			$pwd=md5($pwdinput);
 			$user = M("user"); // 实例化user对象
             $data['mobile|login_name'] = $uname;
-			$result=$user->field('password')->where($data)->select(); 
-			if($pwd==$result[0]['password']){//判断密码
-				$msg='登录成功';
+			$result = $user->field('password,uid')->where($data)->select(); 
+			if($pwd == $result[0]['password']){//判断密码
+				$msg = '登录成功';
+				$data2['login_time'] = time();
+				$user->where($data)->save($data2);
 			}
 			else{
-				$msg='账号或密码有误';
+				$msg = '账号或密码有误';
 			}
 		}
-		$data=array(
-		        'uname'=>$uname,
+		if(false !== $result){
+			$status = 'T';
+		}
+		else{
+			$status = 'F';
+			$msg = '数据库操作有误';
+		}
+		$data = array(
 				'pwd'=>$pwdinput,
+				'uid'=>$result[0]['uid'],
+				'mobile'=>$result[0]['mobile'],
 		        );
 		$response = array(
-                'type'  => 'json', 
-                'message' => $msg,
-				'data'=>$data,
+		        'msg' => $msg,
+				'content'=>$data,
+				'status'=>$status,
+				//'login_time'=>$data2,
 				);
 		
 		echo json_encode($response);
+	}
+	public function update(){//编辑信息
+		$input = $GLOBALS['HTTP_RAW_POST_DATA'];
+		$inputdone = json_decode($input,true);
+		$data['mobile'] = $inputdone['mobile'];
+		$pwd1 = $inputdone['pwd1'];
+		$pwd2 = $inputdone['pwd2'];
+		
+		$user = M("user"); 
+	    $data1['password'] = md5($pwd1);
+		$data1['update_time'] = time();
+		//验证码空缺
+		if($pwd1 == $pwd2){
+			$result = $user->where($data)->save($data1);
+			$msg = "密码修改成功";
+		}
+		else{
+			$msg = "两次密码输入不同或密码不足6位";
+		}
+		if($result !== false){
+			$status = 'T';
+		}
+		else{
+			$status = 'F';
+		}
+		$response = array(
+		        'msg' => $msg,
+				'content'=>'',
+				'status'=>$status,
+				//'login_time'=>$data2,
+				);
 	}
 }

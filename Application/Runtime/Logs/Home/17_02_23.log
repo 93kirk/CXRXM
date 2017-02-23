@@ -1,0 +1,173 @@
+[ 2017-02-23T09:05:22+08:00 ] ::1 /CRM/index.php/home/customer/showall?uid=100000006&date=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+
+[ 2017-02-23T09:05:42+08:00 ] ::1 /CRM/index.php/home/customer/showall?uid=100000006&date=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `crm_user` [ RunTime:0.0032s ]
+SQL: SELECT crm_customer.name,crm_customer.create_date as date FROM `crm_user` INNER JOIN crm_rl_user_customer ON crm_user.uid = crm_rl_user_customer.uid INNER JOIN crm_customer ON crm_rl_user_customer.cid = crm_customer.cid  WHERE crm_user.uid = '100000006' ORDER BY date desc  [ RunTime:0.0400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020518s ]
+
+[ 2017-02-23T09:28:31+08:00 ] 10.10.12.189 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+NOTIC: [8] Undefined index: uname E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 56 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 75 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 85 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2017-02-23T09:45:52+08:00 ] 10.10.12.189 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+NOTIC: [8] Undefined index: uname E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 56 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 75 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 85 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2017-02-23T09:48:28+08:00 ] ::1 /CRM/index.php/home/customer/update?name=%27%E5%8D%95%27&uname=%27test%27&mobile=18818888888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0033s ]
+NOTIC: [8] Undefined index: uid E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 38 行.
+NOTIC: [8] Undefined index: nameup E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 40 行.
+NOTIC: [8] Undefined index: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 46 行.
+NOTIC: [8] Undefined index: profession E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 49 行.
+NOTIC: [8] Undefined index: remark E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 52 行.
+SQL: UPDATE `crm_customer` SET `mobile`='18818888888' WHERE `name` = '\'单\'' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: msg E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: status E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 60 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2017-02-23T09:55:30+08:00 ] ::1 /CRM/index.php/home/customer/update?name=%27%E5%8D%95%27&uname=%27test%27&mobile=18818888888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0033s ]
+NOTIC: [8] Undefined index: uid E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 38 行.
+NOTIC: [8] Undefined index: nameup E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 40 行.
+NOTIC: [8] Undefined index: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 46 行.
+NOTIC: [8] Undefined index: profession E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 49 行.
+NOTIC: [8] Undefined index: remark E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 52 行.
+SQL: UPDATE `crm_customer` SET `mobile`='18818888888' WHERE `name` = '\'单\'' [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: msg E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: status E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 60 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2017-02-23T09:55:40+08:00 ] ::1 /CRM/index.php/home/customer/update?name=%E5%8D%95&uname=test&mobile=18818888888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0057s ]
+NOTIC: [8] Undefined index: uid E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 38 行.
+NOTIC: [8] Undefined index: nameup E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 40 行.
+NOTIC: [8] Undefined index: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 46 行.
+NOTIC: [8] Undefined index: profession E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 49 行.
+NOTIC: [8] Undefined index: remark E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 52 行.
+SQL: UPDATE `crm_customer` SET `mobile`='18818888888' WHERE `name` = '单' [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: msg E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: status E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 60 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2017-02-23T09:56:24+08:00 ] ::1 /CRM/index.php/home/customer/add?name=%E5%8D%95&uname=test&mobile=18818888888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined variable: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 16 行.
+SQL: INSERT INTO `crm_customer` (`name`,`create_by`,`create_date`,`update_date`,`is_abandon`,`is_fromclue`,`mobile`) VALUES ('单','test','1487814984','1487814984','0','0','18818888888') [ RunTime:0.0497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2017-02-23T10:16:11+08:00 ] 10.10.13.184 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+NOTIC: [8] Undefined index: uname E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 56 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 75 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 85 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2017-02-23T10:29:28+08:00 ] 10.10.13.184 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+NOTIC: [8] Undefined index: uname E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 56 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 75 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 85 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2017-02-23T10:59:48+08:00 ] 10.10.12.189 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+NOTIC: [8] Undefined index: uname E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 56 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 75 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 85 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000587s ]
+

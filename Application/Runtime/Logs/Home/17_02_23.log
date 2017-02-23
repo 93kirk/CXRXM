@@ -171,3 +171,166 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000587s ]
 
+[ 2017-02-23T11:19:48+08:00 ] 10.10.12.189 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+NOTIC: [8] Undefined index: uname E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 56 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 75 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 85 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2017-02-23T14:02:09+08:00 ] 10.10.12.189 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+NOTIC: [8] Undefined index: uname E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 56 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 75 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 85 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2017-02-23T14:03:51+08:00 ] 10.10.12.189 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+NOTIC: [8] Undefined index: uname E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 56 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 75 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 85 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2017-02-23T14:05:44+08:00 ] 10.10.12.189 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+NOTIC: [8] Undefined index: uname E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 56 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 75 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 85 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2017-02-23T14:07:40+08:00 ] 10.10.12.189 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+NOTIC: [8] Undefined index: uname E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 56 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 75 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 85 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2017-02-23T14:07:40+08:00 ] 10.10.12.189 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+NOTIC: [8] Undefined index: uname E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 56 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 75 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 85 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2017-02-23T14:07:41+08:00 ] 10.10.12.189 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+NOTIC: [8] Undefined index: uname E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 56 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 75 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 85 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2017-02-23T14:32:28+08:00 ] ::1 /CRM/index.php/home/customer/find?name=%E5%8D%95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `crm_customer` WHERE crm_customer.name LIKE '%单%'  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000861s ]
+
+[ 2017-02-23T14:41:29+08:00 ] ::1 /CRM/index.php/home/customer/find?name=%E5%8D%95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0050s ]
+SQL: SELECT `name` FROM `crm_customer` WHERE crm_customer.name LIKE '%单%'  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2017-02-23T14:49:01+08:00 ] ::1 /CRM/index.php/home/customer/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001998s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0033s ]
+NOTIC: [8] Undefined index: name E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 9 行.
+SQL: SELECT * FROM `crm_customer` WHERE `name` = null  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: name E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 16 行.
+NOTIC: [8] Undefined index: uname E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 17 行.
+NOTIC: [8] Undefined index: mobile E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 22 行.
+NOTIC: [8] Undefined variable: address E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 25 行.
+SQL: INSERT INTO `crm_customer` (`name`,`create_by`,`create_date`,`update_date`,`is_abandon`,`is_fromclue`) VALUES (NULL,NULL,'1487832541','1487832541','0','0') [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000991s ]
+
+[ 2017-02-23T14:49:34+08:00 ] ::1 /CRM/index.php/home/customer/add?name=%E5%8D%95&uname=test&mobile=1881888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `crm_customer` WHERE `name` = '单'  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001133s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001277s ]
+

@@ -4,28 +4,38 @@ use Think\Controller;
 class CustomerController extends Controller {
 	
     public function add(){//添加新客户
+
 		$customer = M("customer");
-		$data['name'] = $_GET['name'];
-		$data['create_by'] = $_GET['uname'];
-		$data['create_date'] = time();
-		$data['update_date'] = $data['create_date'];
-		$data['is_abandon'] = 0;
-		$data['is_fromclue'] = 0;
-		if($_GET['mobile']!=null){
-			$data['mobile'] = $_GET['mobile'];
-		}
-		if($address!=null){
-			$data['address'] = $_GET['address'];
-		}
-		$result = $customer->add($data);
-		if(false !== $result){
-			$status = 'T';
-			$msg = '添加成功';
+		$test['name'] = $_GET['name'];
+		$result = $customer->where($test)->select();
+		if($result != null){
+			$status = 'F';
+		    $msg = '该客户名已被使用，请在后面添加区分标识';
 		}
 		else{
-			$status = 'F';
-			$msg = '添加失败';
+			$data['name'] = $_GET['name'];
+		    $data['create_by'] = $_GET['uname'];
+		    $data['create_date'] = time();
+	    	$data['update_date'] = $data['create_date'];
+	    	$data['is_abandon'] = 0;
+	    	$data['is_fromclue'] = 0;
+	    	if($_GET['mobile']!=null){
+	    		$data['mobile'] = $_GET['mobile'];
+	    	}
+	    	if($address!=null){
+	    		$data['address'] = $_GET['address'];
+	    	}
+	    	$result = $customer->add($data);
+		    if(false !== $result){
+		    	$status = 'T';
+		    	$msg = '添加成功';
+	    	}
+	    	else{
+		    	$status = 'F';
+		    	$msg = '添加失败';
+		    }
 		}
+
 		$response = array(
 		        'msg' => $msg,
 				'content'=>'',
@@ -112,5 +122,25 @@ class CustomerController extends Controller {
 			->where($filter)->select();
 		
     }
+	
+	public function find(){//客户查询
+		$customer = M("customer");
+		$filter['crm_customer.name'] = array('like' , '%'.$_GET['name'].'%');
+		$result = $customer->field('name')->where($filter)->select();
+		if(false !== $result){
+			$status = 'T';
+			$msg = '查询成功';
+		}
+		else{
+			$status = 'F';
+			$msg = '查询失败';
+		}
+		$response = array(
+		        'msg' => $msg,
+				'content'=>$result,
+				'status'=>$status,
+				);
+		echo json_encode($response);
+	}
 
 }

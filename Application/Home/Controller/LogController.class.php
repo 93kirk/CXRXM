@@ -14,6 +14,12 @@ class LogController extends Controller {
 		$user = M("user"); // 实例化user对象
         $data['mobile'] = $mobile;
 		$result=$user->where($data)->select();
+		if(false !== $result){
+			$status = 'T';
+		}
+		else{
+			$status = 'F';
+		}
 		if(preg_match("/^1[34578]\d{9}$/", $mobile)&&$result==null){//判断手机号大致格式
 			if($pwdinput1==$pwdinput2&&strlen($pwdinput1)>=6){//判断两次密码是否相同，以及密码长度
 				$pwd=md5($pwdinput1);
@@ -23,12 +29,14 @@ class LogController extends Controller {
                 $data['password'] = $pwd;
 				$data['create_date'] = time();
 				$result=$user->add($data);
+				$data['create_date'] = date('Y-m-d',$data['create_date']);
 			}
 			else{
 				$msg = '两次密码输入不同或密码不足6位';
 			    $data['mobile'] = $mobile;
                 $data['pwd1'] = $pwdinput1;
 			    $data['pwd2'] = $pwdinput2;
+				$status = 'F';
 			}
 		}
 		else{
@@ -36,13 +44,9 @@ class LogController extends Controller {
 			$data['mobile'] = $mobile;
             $data['pwd1'] = $pwdinput1;
 			$data['pwd2'] = $pwdinput2;
-		}
-		if(false !== $result){
-			$status = 'T';
-		}
-		else{
 			$status = 'F';
 		}
+		
 		$response = array(
                 'message' => $msg,
 				'data'=>$data,
@@ -62,20 +66,23 @@ class LogController extends Controller {
 			$pwd=md5($pwdinput);
 			$user = M("user"); // 实例化user对象
             $data['mobile|login_name'] = $uname;
-			$result = $user->field('password,uid')->where($data)->select(); 
+			$result = $user->field('password,uid,mobile,login_name')->where($data)->select(); 
 			if($pwd == $result[0]['password']){//判断密码
 				$msg = '登录成功';
 				$data2['login_time'] = time();
 				$user->where($data)->save($data2);
+				$status = 'T';
 			}
 			else{
 				$msg = '账号或密码有误';
+				$status = 'F';
 			}
 		}
-		if(false !== $result){
-			$status = 'T';
+		if(false !== $result&&$result == null){
+			$status = 'F';
+			$msg = '该账号未注册';
 		}
-		else{
+		else if(false === $result){
 			$status = 'F';
 			$msg = '数据库操作有误';
 		}
@@ -83,6 +90,7 @@ class LogController extends Controller {
 				'pwd'=>$pwdinput,
 				'uid'=>$result[0]['uid'],
 				'mobile'=>$result[0]['mobile'],
+				'uname'=>$result[0]['login_name'],
 		        );
 		$response = array(
 		        'msg' => $msg,
@@ -107,19 +115,20 @@ class LogController extends Controller {
 		if($pwd1 == $pwd2){
 			$result = $user->where($data)->save($data1);
 			$msg = "密码修改成功";
+			if($result !== false){
+			$status = 'T';
+		    }
+		    else{
+		    	$status = 'F';
+		    }
 		}
 		else{
 			$msg = "两次密码输入不同或密码不足6位";
-		}
-		if($result !== false){
-			$status = 'T';
-		}
-		else{
 			$status = 'F';
 		}
+		
 		$response = array(
 		        'msg' => $msg,
-				'content'=>'',
 				'status'=>$status,
 				//'login_time'=>$data2,
 				);

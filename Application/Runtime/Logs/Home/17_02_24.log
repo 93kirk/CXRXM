@@ -1804,3 +1804,71 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000950s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001059s ]
 
+[ 2017-02-24T17:16:12+08:00 ] 10.10.13.30 /CRM/index.php/home/customer/detail?cid=17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0044s ]
+SQL: SELECT crm_customer.name as name,crm_customer.mobile as mobile,crm_customer.address as address,crm_customer.profession as profession,crm_customer.remark as remark,crm_customer.deal_status as status,crm_customer.update_date as update_date,crm_customer.create_by as create_by FROM `crm_customer` WHERE crm_customer.cid = '17'  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001437s ]
+
+[ 2017-02-24T17:16:44+08:00 ] 10.10.12.189 /CRM/index.php/home/log/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+NOTIC: [8] Undefined index: uname E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 56 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 75 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: result E:\WWW\CRM\Application\Home\Controller\LogController.class.php 第 85 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000902s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001014s ]
+
+[ 2017-02-24T17:17:49+08:00 ] 10.10.13.30 /CRM/index.php/home/customer/detail?cid=17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0036s ]
+SQL: SELECT crm_customer.name as name,crm_customer.mobile as mobile,crm_customer.address as address,crm_customer.profession as profession,crm_customer.remark as remark,crm_customer.deal_status as status,crm_customer.update_date as update_date,crm_customer.create_by as create_by FROM `crm_customer` WHERE crm_customer.cid = '17'  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2017-02-24T17:19:36+08:00 ] 10.10.12.189 /CRM/index.php/home/customer/showall?uid=100000006&date=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `crm_user` [ RunTime:0.0028s ]
+SQL: SELECT crm_customer.name,crm_customer.cid,crm_customer.update_date as date FROM `crm_user` INNER JOIN crm_rl_user_customer ON crm_user.uid = crm_rl_user_customer.uid INNER JOIN crm_customer ON crm_rl_user_customer.cid = crm_customer.cid  WHERE crm_user.uid = '100000006' ORDER BY date desc  [ RunTime:0.0166s ]
+NOTIC: [8] Undefined offset: 3 E:\WWW\CRM\Application\Home\Controller\CustomerController.class.php 第 106 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000697s ]
+
+[ 2017-02-24T17:19:37+08:00 ] 10.10.12.189 /CRM/index.php/home/customer/detail?cid=17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `crm_customer` [ RunTime:0.0029s ]
+SQL: SELECT crm_customer.name as name,crm_customer.mobile as mobile,crm_customer.address as address,crm_customer.profession as profession,crm_customer.remark as remark,crm_customer.deal_status as status,crm_customer.update_date as update_date,crm_customer.create_by as create_by FROM `crm_customer` WHERE crm_customer.cid = '17'  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+

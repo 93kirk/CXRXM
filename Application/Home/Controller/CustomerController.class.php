@@ -4,11 +4,13 @@ use Think\Controller;
 class CustomerController extends Controller {
 	
     public function add(){//添加新客户
-
 		$customer = M("customer");
+		$rl = M("rl_user_customer");
 		$test['name'] = $_GET['name'];
 		$test['create_by'] = $_GET['uname'];
+		
 		$result = $customer->where($test)->select();
+		
 		if($result != null){
 			$status = 'F';
 		    $msg = '该客户名已被使用，请在后面添加区分标识';
@@ -28,19 +30,28 @@ class CustomerController extends Controller {
 	    		$data['address'] = $_GET['address'];
 	    	}
 	    	$result = $customer->add($data);
-		    if(false !== $result){
-		    	$status = 'T';
-		    	$msg = '添加成功';
-	    	}
-	    	else{
+			$data1['name'] = $data['name'];
+			$result1 = $customer->field('cid')->where($data1)->select();
+			$data_rl['uid'] = $_GET['uid'];
+			$data_rl['cid'] = $result1[0]['cid'];
+			$rl->add($data_rl);
+			
+			
+		    if(false !== $result&&$result != null){
+			$status = 'T';
+			$msg = '添加成功';
+		    }
+		    else if(false !== $result&&$result == null){
 		    	$status = 'F';
-		    	$msg = '添加失败';
+		    	$msg = '添加信息为空';
+		    }
+		    else{
+		    $status = 'F';
+		    $msg = '添加失败';
 		    }
 		}
-
 		$response = array(
 		        'msg' => $msg,
-				'content'=>'',
 				'status'=>$status,
 				);
 		echo json_encode($response);
@@ -65,11 +76,22 @@ class CustomerController extends Controller {
 		if($_GET['remark']!=null){
 			$data['remark'] = $_GET['remark'];
 		}
-		$customer->where($filter)->save($data);
-		
+		$result = $customer->where($filter)->save($data);
+		if(false !== $result&&$result != null){
+			    $status = 'T';
+		    	$msg = '修改成功';
+		    }
+		else if(false !== $result&&$result == null){
+		    	$status = 'F';
+		    	$msg = '客户信息未修改';
+		    }
+		else{
+		    $status = 'F';
+		    $msg = '修改失败';
+		}
 		$response = array(
 		        'msg' => $msg,
-				'content'=>'',
+				'content'=>$data,
 				'status'=>$status,
 				);
 		echo json_encode($response);
@@ -109,7 +131,7 @@ class CustomerController extends Controller {
 			}
 		}
 		else if(false !== $result&&$result == null){
-			$status = 'T';
+			$status = 'F';
 			$msg = '暂无客户请添加或转化';
 		}
 		else{
@@ -127,7 +149,7 @@ class CustomerController extends Controller {
     public function detail(){//客户详情
 		$customer = M("customer");
 		$filter['crm_customer.cid'] = $_GET['cid'];
-		$result = $customer->field('crm_customer.name as name,crm_customer.mobile as mobile,crm_customer.address as address,crm_customer.profession as profession,crm_customer.remark as remark,crm_customer.deal_status as status,crm_customer.update_date as update_date,crm_customer.create_by as create_by')
+		$result = $customer->field('crm_customer.cid as cid,crm_customer.name as name,crm_customer.mobile as mobile,crm_customer.address as address,crm_customer.profession as profession,crm_customer.remark as remark,crm_customer.deal_status as status,crm_customer.update_date as update_date,crm_customer.create_by as create_by')
 		    //->join('LEFT JOIN crm_opportunity on crm_customer.cid = crm_opportunity.cid')
 		    //->join('LEFT JOIN crm_visit on crm_customer.cid = crm_visit.cid')
 			//->join('LEFT JOIN crm_user_customer_act on crm_customer.cid = crm_user_customer_act.cid')
@@ -154,14 +176,17 @@ class CustomerController extends Controller {
 	public function find(){//客户查询
 		$customer = M("customer");
 		$filter['crm_customer.name'] = array('like' , '%'.$_GET['name'].'%');
-		$result = $customer->field('name')->where($filter)->select();
+		$filter['uid'] = $_GET['uid'];
+		$result = $customer->
+		join('crm_rl_user_customer ON crm_customer.cid = crm_rl_user_customer.cid')->
+		field('name')->where($filter)->select();
 		if(false !== $result&&$result != null){
 			$status = 'T';
 			$msg = '查询成功';
 		}
 		else if(false !== $result&&$result == null){
-			$status = 'T';
-			$msg = '查无此人';
+			$status = 'F';
+			$msg = '您没有该客户信息';
 		}
 		else{
 			$status = 'F';

@@ -4,7 +4,7 @@ use Think\Controller;
 class LogController extends Controller {
 	//注册
 	public function signup(){
-		$input=$GLOBALS['HTTP_RAW_POST_DATA'];
+		$input = file_get_contents('php://input');
 		$inputdone=json_decode($input,true);
 		//var_dump($inputdone);
 		//$ip = get_client_ip();
@@ -55,10 +55,11 @@ class LogController extends Controller {
 		echo json_encode($response);
 	}
     public function login(){//登录
-		$input = $GLOBALS['HTTP_RAW_POST_DATA'];
+		$input = file_get_contents('php://input');
 		$inputdone = json_decode($input,true);
 		$uname = $inputdone['uname'];
 		$pwdinput = $inputdone['pwd'];
+		
 		if($uname == null||$pwdinput==null){//判断账号密码是否为空
 			$msg = '账号或密码为空';
 		}
@@ -102,7 +103,7 @@ class LogController extends Controller {
 		echo json_encode($response);
 	}
 	public function update(){//编辑信息
-		$input = $GLOBALS['HTTP_RAW_POST_DATA'];
+		$input = file_get_contents('php://input');
 		$inputdone = json_decode($input,true);
 		$data['mobile'] = $inputdone['mobile'];
 		$pwd1 = $inputdone['pwd1'];
